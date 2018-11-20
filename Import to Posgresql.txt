@@ -1,0 +1,7 @@
+SET client_encoding = 'LATIN1';
+
+COPY icd (chaptercode,chaptername,groupcode,groupname,typecode,typename,diseasecode,diseasename)
+FROM '/Users/toando/Desktop/A2-SADI-DoQuocToan-S3652979/icdenglish_new-2.csv' DELIMITER ',' CSV Header ;
+
+COPY drug(name)
+FROM '/Users/toando/Desktop/A2-SADI-DoQuocToan-S3652979/druglist.csv' DELIMITER ',' CSV Header;
